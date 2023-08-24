@@ -3,7 +3,9 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    container: {
+      center: true
+    },
   },
   screens: {
     'mobile': { 'min': '100px', 'max': '500px' },

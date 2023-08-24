@@ -1,9 +1,18 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function Intro() {
+  const textAnimate = {
+    offscreen: { y: 50, opacity: 0 },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: { type: "spring", bounce: 0.4, duration: 1 },
+    },
+  };
   return (
     <div
-      className="w-[60%] flex flex-col justify-between h-screen max-h-[808px]
+      className="w-[60%] flex flex-col h-screen max-h-[808px]
           tablet:w-full tablet:max-w-[500px] tablet:m-auto
           mobile:w-full"
     >
@@ -39,20 +48,26 @@ function Intro() {
         </ul>
       </div>
 
-      {/* <div className="flex flex-row justify-around">
-        <div className="flex flex-col h-96 justify-center items-start ">
-          <p className="text-xl text-left pb-4">HELLO👋, I AM</p>
-          <p className="text-5xl font-bold text-left pb-4">FENIL RAMI</p>
-          <p className="text-lg whitespace-pre-wrap font-light text-gray-600">
-            A MERN stack developer, Building Seamless web applications.
-          </p>
-        </div>
-
-        <div className="flex flex-row justify-center items-center h-96 w-96">
-          
-        </div> */}
-      {/* </div> */}
-
+      <motion.div
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+        viewport={{ once: false, amount: 0.5 }}
+        transition={{ staggerChildren: 0.5 }}
+        className="px-16 tablet:px-10 mobile:px-8 py-48"
+      >
+        <motion.p
+          variants={textAnimate}
+          className="font-proxima text-xl whitespace-nowrap leading-10 mobile:text-[22px] mobile:py-2 "
+        >
+          HELLO👋, I AM
+        </motion.p>
+        <h1 className=" font-bold whitespace-nowrap font-poppins text-5xl leading-snug mini-laptop:text-4xl mini-laptop:leading-normal tablet:text-4xl tablet:leading-sung mobile:leading-[1.1]">
+          FENIL RAMI
+        </h1>
+        <p className=" text-[18px] max-w-[600px] text-slate-500 mini-laptop:text-[20px] tablet:text-[18px] mobile:text-[18px] mobile:py-2">
+          A MERN stack developer, Building Seamless web applications.
+        </p>
+      </motion.div>
     </div>
   );
 }
