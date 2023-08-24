@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Icon from "./icon";
 
 function Intro() {
   const textAnimate = {
@@ -67,6 +68,44 @@ function Intro() {
         <p className=" text-[18px] max-w-[600px] text-slate-500 mini-laptop:text-[20px] tablet:text-[18px] mobile:text-[18px] mobile:py-2">
           A MERN stack developer, Building Seamless web applications.
         </p>
+      </motion.div>
+      <motion.div
+        initial={{ y: 10, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1, transition: { delay: 0.4 } }}
+        viewport={{ once: false, amount: 0.6 }}
+        className="px-14 tablet:px-10 py-12 flex flex-row mobile:px-8"
+      >
+        <Icon
+          i={1}
+          url="https://github.com/fenil3357"
+          name="Github"
+          logo="Github"
+        />
+        <Icon
+          i={2}
+          url="https://twitter.com/fenil3357"
+          logo="Twitter"
+          name="Twitter"
+        />
+        <Icon
+          i={3}
+          url="https://www.linkedin.com/in/fenil-rami-6a7803204/"
+          logo="Linkedin"
+          name="Linkedin"
+        />
+
+        <Icon
+          i={5}
+          url="https://instagram.com/fenil3357"
+          name="Instagram"
+          logo="Instagram"
+        />
+        <Icon
+          i={6}
+          url="mailto:fenil3357@gmail.com"
+          logo="Email"
+          name="Email"
+        />
       </motion.div>
     </div>
   );
