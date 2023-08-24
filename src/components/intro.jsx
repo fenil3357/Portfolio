@@ -107,6 +107,9 @@ function Intro() {
           name="Email"
         />
       </motion.div>
+      <div className="w-[45%] h-screen max-h-[808px] tablet:hidden mobile:hidden">
+        
+      </div>
     </div>
   );
 }

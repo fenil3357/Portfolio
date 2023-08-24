@@ -21,7 +21,7 @@ export default function Icon(props) {
       animate={{ scale: 1, y: 0 }}
       whileHover={{ scale: 1.2 }}
       viewport={{ once: true, amount: 0.5 }}
-      transition={{ staggerChildren: 0.5, delay: i * 0.2 }}
+      transition={{ staggerChildren: 0.5, delay: i * 0.25 }}
       className="scale-100"
     >
       <a
