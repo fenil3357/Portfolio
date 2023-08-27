@@ -50,7 +50,7 @@ const About = () => {
           }}
           viewport={{ once: true, amount: 0.6 }}
           transition={{ staggerChildren: 1 }}
-          className=" font-proxima text-[17px] w-[65%] px-6 py-2 tablet:w-full mobile:w-full mobile:px-2 text-gray-500"
+          className=" font-proxima text-[17px] w-[65%] px-6 py-2 tablet:w-full mobile:w-full mobile:px-2 mobile:text-center text-gray-500"
         >
           <motion.p variants={textUpAnimate}>
             Hello! My name is <b>Fenil Rami</b>, I have been interested in web
