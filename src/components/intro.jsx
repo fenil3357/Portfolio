@@ -41,12 +41,12 @@ function Intro() {
             <a href="#skills">SKILLS</a>
           </li>
 
-          <li
+          {/* <li
             className="uppercase cursor-pointer mobile:text-[14px] tablet:text-[14px] text-[16px]
        hover:text-blue-700 mx-3 tablet:px-1 my-1 text-gray-500 hover:border-b-blue-700 hover:border-b"
           >
             <a href="#projects">PROJECTS</a>
-          </li>
+          </li> */}
         </ul>
       </div>
 
