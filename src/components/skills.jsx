@@ -23,9 +23,11 @@ function Skills() {
             <h1 className="font-bold tracking-wide mb-3 uppercase text-[16px]">
               Languages
             </h1>
+            <ListItem name="Javascript" />
+            <ListItem name="Typescript" />
+            <ListItem name="Python" />
             <ListItem name="C" />
             <ListItem name="C++" />
-            <ListItem name="Javascript" />
             <ListItem name="HTML" />
             <ListItem name="CSS" />
           </div>
@@ -34,6 +36,8 @@ function Skills() {
               Frameworks
             </h1>
             <ListItem name="Nodejs" />
+            <ListItem name="Nestjs" />
+            <ListItem name="Expressjs" />
             <ListItem name="Reactjs" />
             <ListItem name="Tailwind CSS" />
             <ListItem name="Bootstrap" />
@@ -42,17 +46,23 @@ function Skills() {
             <h1 className="font-bold tracking-wide mb-3 uppercase text-[16px]">
               Databases
             </h1>
+            <ListItem name="Postgres" />
             <ListItem name="MongoDB" />
+            <ListItem name="Redis" />
             <ListItem name="MySQL" />
           </div>
           <div className="mr-14 tablet:mr-0 mobile:mr-0 mb-5">
             <h1 className="font-bold tracking-wide mb-3 uppercase text-[16px]">
-              Tools
+              Tools/Services
             </h1>
+            <ListItem name="AWS" />
+            <ListItem name="Graphql" />
+            <ListItem name="Docker" />
+            <ListItem name="Firebase" />
+            <ListItem name="Oauth2" />
             <ListItem name="Git" />
             <ListItem name="Github" />
-            <ListItem name="Postman API" />
-            <ListItem name="Firecamp" />
+            <ListItem name="Postman" />
           </div>
         </div>
       </div>
